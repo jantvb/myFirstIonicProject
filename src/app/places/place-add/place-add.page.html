@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/places"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add New Place</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-content>
+          <form [formGroup]="addForm">
+            <ion-item lines="full">
+              <ion-label position="floating">Title</ion-label>
+              <ion-input type="text" required formControlName="titleControl"></ion-input>
+            </ion-item>
+            <ion-item lines="full">
+              <ion-label position="floating">Image URL</ion-label>
+              <ion-input type="text" required formControlName="imageURLControl"></ion-input>
+            </ion-item>
+            <ion-button color="success" (click)="saveNewPlace()">SAVE</ion-button>
+          </form>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
