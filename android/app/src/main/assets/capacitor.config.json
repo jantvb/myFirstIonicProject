@@ -1,0 +1,6 @@
+{
+	"appId": "com.jose.app",
+	"appName": "myFirstIonicProject",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
